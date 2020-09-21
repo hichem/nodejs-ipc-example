@@ -2,6 +2,7 @@ const zmq = require("zeromq");
 
 async function run() {
   sock = zmq.socket("req");
+  sock.identity = "zmq-client" + process.id;
 
   //sock.bind("ipc:///tmp/app.world");
 
@@ -13,7 +14,7 @@ async function run() {
 
   // Receive messages asynchronously
   sock.on('message', function(data) {
-    console.log('Received Message:', data.toString());
+    console.log('[' + sock.identity + '] ' + 'Received Message: ' + data.toString());
   });
   
 }
