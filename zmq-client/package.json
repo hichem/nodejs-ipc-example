@@ -9,6 +9,6 @@
   "author": "Hichem BOUSSETTA",
   "license": "ISC",
   "dependencies": {
-    "zeromq": "^6.0.0-beta.6"
+    "zeromq": "^5.2.0"
   }
 }
