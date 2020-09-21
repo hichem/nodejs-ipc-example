@@ -12,8 +12,8 @@ async function run() {
   await sock.send("Hello World 6");
 
   // Receive messages asynchronously
-  sock.on('message', function(reply) {
-    console.log('Received Message:', reply.toString());
+  sock.on('message', function(data) {
+    console.log('Received Message:', data.toString());
   });
   
 }

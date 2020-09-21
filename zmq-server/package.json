@@ -1,0 +1,11 @@
+{
+  "name": "zmq-server",
+  "version": "1.0.0",
+  "description": "Zeromq IPC Server Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hichem BOUSSETTA",
+  "license": "ISC"
+}

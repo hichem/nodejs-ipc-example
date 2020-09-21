@@ -32,7 +32,7 @@ ipc.serve(
                 ipc.log('got a message', data,data.toString());
                 ipc.server.emit(
                     socket,
-                    'goodbye'
+                    data.toString()
                 );
             }
         );
