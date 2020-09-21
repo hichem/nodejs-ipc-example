@@ -15,7 +15,7 @@ async function run() {
   sock.on('message', function(data) {
     console.log('Received Message:', data.toString());
 
-    await sock.send(data.toString());
+    sock.send(data.toString());
   });
   
 }
