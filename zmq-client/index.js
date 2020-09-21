@@ -2,7 +2,7 @@ const zmq = require("zeromq");
 
 async function run() {
   sock = zmq.socket("req");
-  sock.identity = "zmq-client" + process.id;
+  sock.identity = "zmq-client" + process.pid;
 
   //sock.bind("ipc:///tmp/app.world");
 
