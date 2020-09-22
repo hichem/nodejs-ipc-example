@@ -7,8 +7,8 @@ const ipc=require('node-ipc');
  *
  * *************************************/
 
-ipc.config.socketRoot = 'C:\\tmp\\';
-ipc.config.appspace = 'app.';
+// ipc.config.socketRoot = 'C:\\tmp\\';
+// ipc.config.appspace = 'app.';
 ipc.config.id = 'hello';
 ipc.config.retry= 1500;
 ipc.config.rawBuffer=true;
